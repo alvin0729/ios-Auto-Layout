@@ -22,6 +22,7 @@
 		E1BAC85A1D28E2A2000E1597 /* ConstraintUtilities-Install.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC8591D28E2A2000E1597 /* ConstraintUtilities-Install.m */; };
 		E1BAC8611D28E2EA000E1597 /* ConstraintUtilities-Matching.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC85E1D28E2EA000E1597 /* ConstraintUtilities-Matching.m */; };
 		E1BAC8621D28E2EA000E1597 /* NSObject-Nametag.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC8601D28E2EA000E1597 /* NSObject-Nametag.m */; };
+		E1BAC8651D28F45A000E1597 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1BAC8641D28F45A000E1597 /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		E1BAC85E1D28E2EA000E1597 /* ConstraintUtilities-Matching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ConstraintUtilities-Matching.m"; sourceTree = "<group>"; };
 		E1BAC85F1D28E2EA000E1597 /* NSObject-Nametag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Nametag.h"; sourceTree = "<group>"; };
 		E1BAC8601D28E2EA000E1597 /* NSObject-Nametag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-Nametag.m"; sourceTree = "<group>"; };
+		E1BAC8641D28F45A000E1597 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				E1BAC8281D28C4CE000E1597 /* AppDelegate.m */,
 				E1BAC82A1D28C4CE000E1597 /* ViewController.h */,
 				E1BAC82B1D28C4CE000E1597 /* ViewController.m */,
+				E1BAC8631D28F43F000E1597 /* View */,
 				E1BAC82D1D28C4CE000E1597 /* Main.storyboard */,
 				E1BAC8301D28C4CE000E1597 /* Assets.xcassets */,
 				E1BAC8321D28C4CE000E1597 /* LaunchScreen.storyboard */,
@@ -167,6 +170,14 @@
 				E1BAC8601D28E2EA000E1597 /* NSObject-Nametag.m */,
 			);
 			path = ConstrainMatching;
+			sourceTree = "<group>";
+		};
+		E1BAC8631D28F43F000E1597 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1BAC8641D28F45A000E1597 /* View.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1BAC8651D28F45A000E1597 /* View.xib in Resources */,
 				E1BAC8341D28C4CE000E1597 /* LaunchScreen.storyboard in Resources */,
 				E1BAC8311D28C4CE000E1597 /* Assets.xcassets in Resources */,
 				E1BAC82F1D28C4CE000E1597 /* Main.storyboard in Resources */,

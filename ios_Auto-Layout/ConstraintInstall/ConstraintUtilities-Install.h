@@ -17,11 +17,11 @@
 typedef enum
 {
     LayoutPriorityRequired = 1000,
-    LayoutPriorityHigh = 750,
+    LayoutPriorityHigh = 750,                   //Compression resistance default
     LayoutPriorityDragResizingWindow = 510,
     LayoutPriorityMedium = 501,
     LayoutPriorityFixedWindowSize = 500,
-    LayoutPriorityLow = 250,
+    LayoutPriorityLow = 250,                    //Compression hugging default
     LayoutPriorityFittingSize = 50,
     LayoutPriorityMildSuggestion = 1,
 } ConstraintLayoutPriority;
@@ -45,6 +45,7 @@ typedef enum
 @interface NSLayoutConstraint (ViewHierarchy)
 @property (nonatomic, readonly) VIEW_CLASS *firstView;
 @property (nonatomic, readonly) VIEW_CLASS *secondView;
+/** Are two items involved or not*/
 @property (nonatomic, readonly) BOOL isUnary;
 @property (nonatomic, readonly) VIEW_CLASS *likelyOwner;
 @end
