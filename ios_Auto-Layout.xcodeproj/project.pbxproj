@@ -19,6 +19,9 @@
 		E1BAC84B1D28CA15000E1597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BAC84A1D28CA15000E1597 /* Assets.xcassets */; };
 		E1BAC84E1D28CA15000E1597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BAC84C1D28CA15000E1597 /* Main.storyboard */; };
 		E1BAC8561D28CB24000E1597 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC8551D28CB24000E1597 /* CustomView.m */; };
+		E1BAC85A1D28E2A2000E1597 /* ConstraintUtilities-Install.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC8591D28E2A2000E1597 /* ConstraintUtilities-Install.m */; };
+		E1BAC8611D28E2EA000E1597 /* ConstraintUtilities-Matching.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC85E1D28E2EA000E1597 /* ConstraintUtilities-Matching.m */; };
+		E1BAC8621D28E2EA000E1597 /* NSObject-Nametag.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC8601D28E2EA000E1597 /* NSObject-Nametag.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,12 @@
 		E1BAC84F1D28CA15000E1597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1BAC8541D28CB24000E1597 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		E1BAC8551D28CB24000E1597 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		E1BAC8581D28E2A2000E1597 /* ConstraintUtilities-Install.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ConstraintUtilities-Install.h"; sourceTree = "<group>"; };
+		E1BAC8591D28E2A2000E1597 /* ConstraintUtilities-Install.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ConstraintUtilities-Install.m"; sourceTree = "<group>"; };
+		E1BAC85D1D28E2EA000E1597 /* ConstraintUtilities-Matching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ConstraintUtilities-Matching.h"; sourceTree = "<group>"; };
+		E1BAC85E1D28E2EA000E1597 /* ConstraintUtilities-Matching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ConstraintUtilities-Matching.m"; sourceTree = "<group>"; };
+		E1BAC85F1D28E2EA000E1597 /* NSObject-Nametag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Nametag.h"; sourceTree = "<group>"; };
+		E1BAC8601D28E2EA000E1597 /* NSObject-Nametag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-Nametag.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +93,8 @@
 		E1BAC8231D28C4CE000E1597 /* ios_Auto-Layout */ = {
 			isa = PBXGroup;
 			children = (
+				E1BAC85C1D28E2C6000E1597 /* ConstrainMatching */,
+				E1BAC8571D28E24A000E1597 /* ConstraintInstall */,
 				E1BAC8271D28C4CE000E1597 /* AppDelegate.h */,
 				E1BAC8281D28C4CE000E1597 /* AppDelegate.m */,
 				E1BAC82A1D28C4CE000E1597 /* ViewController.h */,
@@ -136,6 +147,26 @@
 				E1BAC8551D28CB24000E1597 /* CustomView.m */,
 			);
 			path = CustomAlignRect;
+			sourceTree = "<group>";
+		};
+		E1BAC8571D28E24A000E1597 /* ConstraintInstall */ = {
+			isa = PBXGroup;
+			children = (
+				E1BAC8581D28E2A2000E1597 /* ConstraintUtilities-Install.h */,
+				E1BAC8591D28E2A2000E1597 /* ConstraintUtilities-Install.m */,
+			);
+			path = ConstraintInstall;
+			sourceTree = "<group>";
+		};
+		E1BAC85C1D28E2C6000E1597 /* ConstrainMatching */ = {
+			isa = PBXGroup;
+			children = (
+				E1BAC85D1D28E2EA000E1597 /* ConstraintUtilities-Matching.h */,
+				E1BAC85E1D28E2EA000E1597 /* ConstraintUtilities-Matching.m */,
+				E1BAC85F1D28E2EA000E1597 /* NSObject-Nametag.h */,
+				E1BAC8601D28E2EA000E1597 /* NSObject-Nametag.m */,
+			);
+			path = ConstrainMatching;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1BAC8611D28E2EA000E1597 /* ConstraintUtilities-Matching.m in Sources */,
 				E1BAC82C1D28C4CE000E1597 /* ViewController.m in Sources */,
+				E1BAC85A1D28E2A2000E1597 /* ConstraintUtilities-Install.m in Sources */,
 				E1BAC8291D28C4CE000E1597 /* AppDelegate.m in Sources */,
 				E1BAC8261D28C4CE000E1597 /* main.m in Sources */,
+				E1BAC8621D28E2EA000E1597 /* NSObject-Nametag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
