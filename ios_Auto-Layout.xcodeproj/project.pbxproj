@@ -13,6 +13,12 @@
 		E1BAC82F1D28C4CE000E1597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BAC82D1D28C4CE000E1597 /* Main.storyboard */; };
 		E1BAC8311D28C4CE000E1597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BAC8301D28C4CE000E1597 /* Assets.xcassets */; };
 		E1BAC8341D28C4CE000E1597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BAC8321D28C4CE000E1597 /* LaunchScreen.storyboard */; };
+		E1BAC8431D28CA15000E1597 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC8421D28CA15000E1597 /* AppDelegate.m */; };
+		E1BAC8461D28CA15000E1597 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC8451D28CA15000E1597 /* main.m */; };
+		E1BAC8491D28CA15000E1597 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC8481D28CA15000E1597 /* ViewController.m */; };
+		E1BAC84B1D28CA15000E1597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BAC84A1D28CA15000E1597 /* Assets.xcassets */; };
+		E1BAC84E1D28CA15000E1597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BAC84C1D28CA15000E1597 /* Main.storyboard */; };
+		E1BAC8561D28CB24000E1597 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC8551D28CB24000E1597 /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +32,28 @@
 		E1BAC8301D28C4CE000E1597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1BAC8331D28C4CE000E1597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1BAC8351D28C4CE000E1597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BAC83F1D28CA15000E1597 /* MAC_Auto-Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAC_Auto-Layout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BAC8411D28CA15000E1597 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E1BAC8421D28CA15000E1597 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E1BAC8451D28CA15000E1597 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1BAC8471D28CA15000E1597 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E1BAC8481D28CA15000E1597 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E1BAC84A1D28CA15000E1597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1BAC84D1D28CA15000E1597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1BAC84F1D28CA15000E1597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BAC8541D28CB24000E1597 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		E1BAC8551D28CB24000E1597 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E1BAC81E1D28C4CE000E1597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1BAC83C1D28CA15000E1597 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				E1BAC8231D28C4CE000E1597 /* ios_Auto-Layout */,
+				E1BAC8401D28CA15000E1597 /* MAC_Auto-Layout */,
 				E1BAC8221D28C4CE000E1597 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				E1BAC8211D28C4CE000E1597 /* ios_Auto-Layout.app */,
+				E1BAC83F1D28CA15000E1597 /* MAC_Auto-Layout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +105,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E1BAC8401D28CA15000E1597 /* MAC_Auto-Layout */ = {
+			isa = PBXGroup;
+			children = (
+				E1BAC8531D28CAD4000E1597 /* CustomAlignRect */,
+				E1BAC8411D28CA15000E1597 /* AppDelegate.h */,
+				E1BAC8421D28CA15000E1597 /* AppDelegate.m */,
+				E1BAC8471D28CA15000E1597 /* ViewController.h */,
+				E1BAC8481D28CA15000E1597 /* ViewController.m */,
+				E1BAC84A1D28CA15000E1597 /* Assets.xcassets */,
+				E1BAC84C1D28CA15000E1597 /* Main.storyboard */,
+				E1BAC84F1D28CA15000E1597 /* Info.plist */,
+				E1BAC8441D28CA15000E1597 /* Supporting Files */,
+			);
+			path = "MAC_Auto-Layout";
+			sourceTree = "<group>";
+		};
+		E1BAC8441D28CA15000E1597 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1BAC8451D28CA15000E1597 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1BAC8531D28CAD4000E1597 /* CustomAlignRect */ = {
+			isa = PBXGroup;
+			children = (
+				E1BAC8541D28CB24000E1597 /* CustomView.h */,
+				E1BAC8551D28CB24000E1597 /* CustomView.m */,
+			);
+			path = CustomAlignRect;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +158,23 @@
 			productReference = E1BAC8211D28C4CE000E1597 /* ios_Auto-Layout.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E1BAC83E1D28CA15000E1597 /* MAC_Auto-Layout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1BAC8501D28CA15000E1597 /* Build configuration list for PBXNativeTarget "MAC_Auto-Layout" */;
+			buildPhases = (
+				E1BAC83B1D28CA15000E1597 /* Sources */,
+				E1BAC83C1D28CA15000E1597 /* Frameworks */,
+				E1BAC83D1D28CA15000E1597 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MAC_Auto-Layout";
+			productName = "MAC_Auto-Layout";
+			productReference = E1BAC83F1D28CA15000E1597 /* MAC_Auto-Layout.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -109,6 +185,9 @@
 				ORGANIZATIONNAME = alvin.3G;
 				TargetAttributes = {
 					E1BAC8201D28C4CE000E1597 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					E1BAC83E1D28CA15000E1597 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -127,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				E1BAC8201D28C4CE000E1597 /* ios_Auto-Layout */,
+				E1BAC83E1D28CA15000E1597 /* MAC_Auto-Layout */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +222,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1BAC83D1D28CA15000E1597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BAC84B1D28CA15000E1597 /* Assets.xcassets in Resources */,
+				E1BAC84E1D28CA15000E1597 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -152,6 +241,17 @@
 				E1BAC82C1D28C4CE000E1597 /* ViewController.m in Sources */,
 				E1BAC8291D28C4CE000E1597 /* AppDelegate.m in Sources */,
 				E1BAC8261D28C4CE000E1597 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1BAC83B1D28CA15000E1597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BAC8491D28CA15000E1597 /* ViewController.m in Sources */,
+				E1BAC8561D28CB24000E1597 /* CustomView.m in Sources */,
+				E1BAC8461D28CA15000E1597 /* main.m in Sources */,
+				E1BAC8431D28CA15000E1597 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +272,14 @@
 				E1BAC8331D28C4CE000E1597 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E1BAC84C1D28CA15000E1597 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1BAC84D1D28CA15000E1597 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,6 +389,36 @@
 			};
 			name = Release;
 		};
+		E1BAC8511D28CA15000E1597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "MAC_Auto-Layout/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MAC-Auto-Layout";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E1BAC8521D28CA15000E1597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "MAC_Auto-Layout/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MAC-Auto-Layout";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +436,14 @@
 			buildConfigurations = (
 				E1BAC8391D28C4CE000E1597 /* Debug */,
 				E1BAC83A1D28C4CE000E1597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E1BAC8501D28CA15000E1597 /* Build configuration list for PBXNativeTarget "MAC_Auto-Layout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1BAC8511D28CA15000E1597 /* Debug */,
+				E1BAC8521D28CA15000E1597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
